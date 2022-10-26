@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="
+http://www.springframework.org/schema/context"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+
+	<bean name="employee1" class="com.springcore_test.collections.Employees">
+		<property name="empName" value="Wasim" />
+		<property name="empPhoneNumbers">
+			<list>
+				<value>01758652</value>
+				<value>015896</value>
+				<value>021586</value>
+				<value>02158645646</value>
+				
+				
+			</list>
+		</property>
+		
+		<property name="empAddresses">
+			<set>
+				<value>Dhaka</value>
+				<value>Chitagong</value>
+				<value>Rangpur</value>
+				<value>Bogra</value>
+			</set>
+		</property>
+		
+		<property name="empCourses">
+			<map>
+				<entry key="Java" value="6month" />
+				<entry key="Python" value="3month" />
+				<entry key="GO" value="6month" />
+				<entry key="C#" value="5month" />
+			</map>
+		</property>
+		
+		<property name="props">
+			<props>
+				<prop key="userName">Wasim</prop>
+				<prop key="Password">Wasim123</prop>
+			</props>
+		</property>
+		
+		
+		
+		
+	</bean>
+	
+
+</beans>
+
